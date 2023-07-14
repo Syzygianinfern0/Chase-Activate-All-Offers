@@ -25,4 +25,6 @@ Most offers on the Chase website are not useful but I forget them and then I mis
 
 1. Open the Chase website and navigate to the "Chase Offers" page
 2. Open the developer console in dev tools
-3. Copy the contents of ![](./main.js) into the console and press enter
+3. Copy the contents of [main.js](./main.js) into the console and press enter
+4. Wait for the script to finish, it can also run in the background so you can continue with your own work
+5. Proft and get rich
