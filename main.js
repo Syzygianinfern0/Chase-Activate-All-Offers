@@ -1,5 +1,14 @@
 function clickButtons() {
-    const button = document.querySelectorAll('.mds-button--cpo')[1];
+    const buttons = document.querySelectorAll('.mds-button--cpo');
+    let button;
+
+    // Loop through the buttons until finding one that doesn't start with "primary-action"
+    for (let i = 0; i < buttons.length; i++) {
+        if (!buttons[i].id.startsWith('primary-action')) {
+            button = buttons[i];
+            break;
+        }
+    }
 
     if (!button) {
         console.log('No more .mds-button--cpo buttons found. Stopping...');
