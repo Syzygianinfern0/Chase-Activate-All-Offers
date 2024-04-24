@@ -23,8 +23,17 @@ Most offers on the Chase website are not useful but I forget them and then I mis
 
 ## Usage
 
+### Option 1: Dev Console
 1. Open the Chase website and navigate to the "Chase Offers" page
 2. Open the developer console in dev tools
 3. Copy the contents of [main.js](./main.js) into the console and press enter
 4. Wait for the script to finish, it can also run in the background so you can continue with your own work
-5. Proft and get rich
+
+### Option 2: JS Bookmarklet
+
+1. Select the following and drag it into your bookmarks tab
+```js
+javascript:(function(){ var intervalId = setInterval(function() { var element = document.querySelector('._4jplu9 .horizontal-margin'); if (element) { element.click(); setTimeout(function() { window.history.back(); }, 1000); } else { clearInterval(intervalId); console.log('Element not found, stopped the interval.'); } }, 2000); })();
+```
+2. Open the chase offers page and hit the bookmark!
+3. Wait for the script to finish, it can also run in the background so you can continue with your own work
