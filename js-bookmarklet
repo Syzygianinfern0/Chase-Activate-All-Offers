@@ -1,0 +1,1 @@
+javascript:(function(){ var intervalId = setInterval(function() { var element = document.querySelector('._4jplu9 .horizontal-margin'); if (element) { element.click(); setTimeout(function() { window.history.back(); }, 1000); } else { clearInterval(intervalId); console.log('Element not found, stopped the interval.'); } }, 2000); })();
