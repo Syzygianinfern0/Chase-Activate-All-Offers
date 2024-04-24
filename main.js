@@ -1,28 +1,15 @@
-function clickButtons() {
-    const buttons = document.querySelectorAll('.mds-button--cpo');
-    let button;
-
-    // Loop through the buttons until finding one that doesn't start with "primary-action"
-    for (let i = 0; i < buttons.length; i++) {
-        if (!buttons[i].id.startsWith('primary-action')) {
-            button = buttons[i];
-            break;
-        }
+var intervalId = setInterval(function() {
+    // Attempt to find the element and click it
+    var element = document.querySelector('._4jplu9 .horizontal-margin');
+    if (element) {
+        element.click();
+        // Wait for some time before navigating back to ensure the click is processed
+        setTimeout(function() {
+            window.history.back();
+        }, 1000); // Adjust this delay as necessary
+    } else {
+        // If the element isn't found, clear the interval to stop the loop
+        clearInterval(intervalId);
+        console.log('Element not found, stopped the interval.');
     }
-
-    if (!button) {
-        console.log('No more .mds-button--cpo buttons found. Stopping...');
-        return;
-    }
-
-    button.click();
-
-    setTimeout(() => {
-        document.querySelector('#flyoutOverlay')?.click();
-        setTimeout(clickButtons, 2000);
-    }, 2000);
-}
-
-// Call the function to start the process
-clickButtons();
-console.log('Done!');
+}, 2000); // This sets the interval to 2 seconds, adjust this interval as needed
