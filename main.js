@@ -1,6 +1,6 @@
 var intervalId = setInterval(function() {
     // Attempt to find the element and click it
-    var element = document.querySelector('._4jplu9 .horizontal-margin');
+    var element = document.querySelector('._1bof7fb9 .horizontal-margin');
     if (element) {
         element.click();
         // Wait for some time before navigating back to ensure the click is processed

@@ -33,7 +33,7 @@ Most offers on the Chase website are not useful but I forget them and then I mis
 
 1. Select the following and drag it into your bookmarks tab
 ```js
-javascript:(function(){ var intervalId = setInterval(function() { var element = document.querySelector('._4jplu9 .horizontal-margin'); if (element) { element.click(); setTimeout(function() { window.history.back(); }, 1000); } else { clearInterval(intervalId); console.log('Element not found, stopped the interval.'); } }, 2000); })();
+javascript:(function(){ var intervalId = setInterval(function() { var element = document.querySelector('._1bof7fb9 .horizontal-margin'); if (element) { element.click(); setTimeout(function() { window.history.back(); }, 1000); } else { clearInterval(intervalId); console.log('Element not found, stopped the interval.'); } }, 2000); })();
 ```
 2. Open the chase offers page and hit the bookmark!
 3. Wait for the script to finish, it can also run in the background so you can continue with your own work
